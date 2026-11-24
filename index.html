@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprendendo JavaScript</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <h1 id="titulo">Alice Vitoria Gama da Cruz</h1>
+    <p>
+        Faço o ensino médio no IFSP Câmpus Birigui!
+    </p>
+
+    
+    <img src="pngtree-happy-thumbs-up-emoji-png-image_19402500.png" alt="emoji">
+
+    <br><br>
+
+<!-- JavaScript inline -->
+<button onclick="alert('Olá!')">Inline</button>
+
+<!-- JavaScript interno -->
+<button onclick="ola()">Interno</button>
+
+<!-- JavaScript externo -->
+<button onclick="mensagem()">Externo</button>
+
+
+<script>
+    function ola() {
+        alert("Olá!");
+    }
+</script>
+
+    <button id="botaoAlterar">
+        Alterar texto e cor
+    </button>
+
+    <h3>Escreva alguma coisa:</h3>
+
+    <input type="text" id="campo" placeholder="Digite aqui">
+
+    <p id="espelho">O texto aparecerá aqui...</p>
+
+    <br>
+
+    <button id="adicionar">
+        Adicionar curiosidade
+    </button>
+
+    <button id="remover">
+        Remover última curiosidade
+    </button>
+
+    <div id="curiosidades"></div>
+
+    <!-- JavaScript interno -->
+    <script>
+        function mensagemInterna() {
+            alert("Esta mensagem veio do JavaScript interno!");
+        }
+    </script>
+
+    <!-- Conectando JavaScript externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>
